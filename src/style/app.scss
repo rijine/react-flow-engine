@@ -1,0 +1,127 @@
+$heading-font-size: 1.5em;
+$rule-heading-font-size: 1.2em;
+
+body {
+    padding: 20px;
+    background-color: #eceff1;
+    font-family: sans-serif;
+}
+
+.container {
+    display: block;
+}
+
+.heading {
+    font-size: $heading-font-size;
+    display: inline-block;
+    width: calc(100% - 160px);
+    margin-bottom: 20px;
+}
+
+.run-container {
+    display: inline-block;
+}
+
+.rule-list {
+    margin: 0;
+    padding: 0;
+}
+
+.rule-item {
+    background: #fff;
+    border: 1px solid #ebeced;
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    margin: 1px 0;
+    list-style: none;
+}
+
+.rule-header {
+    cursor: pointer;
+    font-size: $rule-heading-font-size;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    &.failed {
+        background: #f44336;
+    }
+    &.success {
+        background: #4CAF50;
+    }
+}
+
+.rule-id {
+    width: 30px;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+}
+
+.rule-title {
+    padding: 10px 15px;
+    display: inline-block;
+    width: calc(100% - 90px);
+}
+
+.rule-body {
+    padding: 15px 30px 15px 30px;
+    font-size: 1em;
+}
+
+.rule-body-title {
+    margin-bottom: 10px;
+}
+
+.rule-body-text {
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    background-color: #dfdede;
+}
+
+.rule-next-state {
+    display: block;
+    width: 100%;
+}
+
+.rule-next {
+  width: 49%;
+  display: inline-block;
+  &>div {
+      display: block;
+      margin-bottom: 5px;
+  }
+  &>div:nth-child(2) {
+      padding: 10px 20px;
+      background-color: #dfdede;
+  }
+  &.rule-true {
+    padding-right: 2%;
+  }
+}
+
+.btn {
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 2px;
+    border-style: none;
+    outline-style: none;
+    cursor: pointer;
+    margin: 0 5px;
+    &.btn-run {
+        background-color: #03A9F4;
+        &:hover {
+            background-color: #29B6F6;
+        }
+        &:active {
+            background-color: #0288D1;
+        }
+    }
+    &.btn-reset {
+        background-color: #81c784;
+        &:hover {
+            background-color: #66bb6a;
+        }
+        &:active {
+            background-color: #388e3c;
+        }
+    }
+}

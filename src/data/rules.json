@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Rule 1",
+        "true_id": 2,
+        "false_id": 3,
+        "body": "function(obj) { return obj.value >= 6;}"
+    },
+    {
+        "id": 2,
+        "title": "Rule 2",
+        "true_id": 2,
+        "false_id": 3,
+        "body": "function(obj) { return obj.value > 4;}"
+    },
+    {
+        "id": 3,
+        "title": "Rule 3",
+        "true_id": 2,
+        "false_id": 3,
+        "body": "function(obj) { return obj.value > 2;}"
+    }
+]
